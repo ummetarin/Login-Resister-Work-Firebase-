@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -8,7 +9,7 @@ const Login = () => {
            <div className="flex justify-center items-center mt-7">
             
 <form className="form">
-  <p className="form-title">Sign in to your account</p>
+  <p className="form-title">Login Please</p>
   <div className="input-container">
     <input placeholder="Enter email" type="email" />
     <span>
@@ -27,11 +28,11 @@ const Login = () => {
     </span>
   </div>
   <button className="submit" type="submit">
-    Sign in
+    Login
   </button>
   <p className="signup-link">
     No account?
-    <a href>Sign up</a>
+    <Link to={'/res'}><a href>Register</a></Link>
   </p>
 </form>
 
